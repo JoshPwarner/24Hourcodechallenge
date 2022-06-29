@@ -1,11 +1,14 @@
-const express = require('express')
-const app = express()
+const express = require("express");
+const fs = require("fs");
+const app = express();
 const port = 3000;
-const cors = require('cors');
+const cors = require("cors");
+app.use(cors());
 
+const data = JSON.parse(fs.readFileSync(`${__dirname}/data.json`));
 
-app.get('/', (req,res)=> res.send('Welcome to Google!'))
+app.get("/", (req, res) => res.send("Welcome to Google!"));
 
-app.get('/searchresults', (req,res)=>res.send(searchResults))
+app.get("/searchresults", (req, res) => res.send(data));
 
-app.listen(port, () => console.log(`Server is up and running at http://localhost:${port}`))
+app.listen(port, () => console.log(`App is running on port ${port}...`));
