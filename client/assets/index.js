@@ -10,9 +10,9 @@ function searchResult(e) {
     .then((res) => res.json())
     .then((data) => {
       data.forEach((el, i) => {
-        const html = ` <div class="result-box"> <div class="result-link-container"><a class="result-link" href="${data[i].address}">${data[i].address}</a></div>
+        const html = ` <div class="result-box"> <div class="result-link-container"><a target="_blank" class="result-link" href="${data[i].address}">${data[i].address}</a></div>
           <div class="result-title-container">
-            <p class="result-desc"><a class="result-link" href="${data[i].address}">${data[i].link}
+            <p class="result-desc"><a target="_blank" class="result-desc" href="${data[i].address}">${data[i].link}
             </a></p>
           </div>
           <div class="result-info-container"><p class="result-info">${data[i].info}</p></div></div>`;
