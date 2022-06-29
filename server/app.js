@@ -3,9 +3,6 @@ const app = express()
 const port = 3000;
 const cors = require('cors');
 
-searchResults = [
-]
-
 
 app.get('/', (req,res)=> res.send('Welcome to Google!'))
 
