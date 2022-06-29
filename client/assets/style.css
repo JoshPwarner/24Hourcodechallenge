@@ -1,4 +1,38 @@
-.center{
-   margin: auto;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-    
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.center {
+  margin: auto;
+}
+.result-box {
+  margin: 5rem 5rem;
+  border: 0.3rem solid #ff8200;
+}
+
+.result-link {
+  font-size: 1.6rem;
+}
+
+.result-desc {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+.result-info {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
