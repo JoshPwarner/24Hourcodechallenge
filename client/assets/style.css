@@ -36,3 +36,10 @@ body {
   font-size: 1.6rem;
   margin-top: 2rem;
 }
+
+.googleLogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
